@@ -1,0 +1,32 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 2,
+      "title": "Mermaid Live Editor",
+      "description": "Editor online para criar diagramas Mermaid",
+      "note": "Editor visual para diagramas Mermaid. Acesse via http://seu-host:8080",
+      "categories": ["development", "tools"],
+      "platform": "linux",
+      "name": "mermaid-live-editor",
+      "logo": "https://mermaid.js.org/img/logo.svg",
+      "repository": {
+        "url": "https://github.com/mermaid-js/mermaid-live-editor",
+        "stackfile": "docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PORT",
+          "label": "Porta da aplicação",
+          "description": "Porta que o Mermaid Live Editor irá utilizar",
+          "default": "8080",
+          "preset": true
+        }
+      ],
+      "ports": [
+        "8080/tcp"
+      ],
+      "volumes": []
+    }
+  ]
+}
